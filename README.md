@@ -2,6 +2,8 @@
 
 A simple notification module.
 
+![Screenshot](./screenshot.png)
+
 ## Features:
 
 * Unobtrusive notifications in the lower right corner of your user’s screen.
