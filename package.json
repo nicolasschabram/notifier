@@ -1,0 +1,37 @@
+{
+  "name": "challenge",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "all": "0.0.0",
+    "classnames": "^2.2.5",
+    "immutable": "^3.8.1",
+    "node-sass-chokidar": "0.0.3",
+    "normalize.css": "^7.0.0",
+    "npm-run": "^4.1.2",
+    "npm-run-all": "^4.1.1",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.13",
+    "redux": "^3.7.2",
+    "redux-immutable": "^4.0.0",
+    "uid": "0.0.2"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom --coverage",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^2.9.1",
+    "jest-enzyme": "^3.8.3",
+    "react-doc-generator": "^1.2.5",
+    "react-test-renderer": "^15.6.1"
+  }
+}
