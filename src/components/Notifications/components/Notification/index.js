@@ -16,6 +16,7 @@ import "./styles.css";
  *    body="Body text"
  *    header="header text"
  * />
+ * Notifications with type="info" automatically disappear after 90  seconds.
  * ```
  */
 export class Notification extends React.Component {
