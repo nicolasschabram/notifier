@@ -15,7 +15,7 @@ Example:
    header="header text"
 />
 ```
-Notifications with type="info" automatically disappear after 90  seconds.   
+Notifications with type="info" automatically disappear after 90  seconds.
 
 
 
@@ -36,14 +36,14 @@ A list of animated notifications.
 Example:
 ```html
 <Notifications />
-```   
+```
 
 
 
 
 Property | Type | Required | Default value | Description
 :--- | :--- | :--- | :--- | :---
-notifications|instanceOf|yes||
+notifications|Immutable.List|yes||
 -----
 **src\components\Trigger\index.js**
 
@@ -53,7 +53,7 @@ A simple form allowing users to trigger custom notifications.
 Example:
 ```html
 <Trigger />
-```   
+```
 
 
 
