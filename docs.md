@@ -34,7 +34,7 @@ closeNotification|func|yes||
 A list of animated notifications.
 Example:
 ```html
-<Trigger />
+<Notifications />
 ```   
 
 

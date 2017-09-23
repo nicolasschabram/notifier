@@ -11,7 +11,7 @@ import Notification from "./components/Notification";
  * A list of animated notifications.
  * Example:
  * ```html
- * <Trigger />
+ * <Notifications />
  * ```
  */
 export class Notifications extends React.Component {
