@@ -10,6 +10,7 @@
     "normalize.css": "^7.0.0",
     "npm-run": "^4.1.2",
     "npm-run-all": "^4.1.1",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
@@ -26,6 +27,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom --coverage",
+    "doc": "react-doc-generator ./src/components -o docs.md",
     "eject": "react-scripts eject"
   },
   "devDependencies": {

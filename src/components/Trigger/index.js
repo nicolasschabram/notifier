@@ -1,10 +1,21 @@
 import React from "react";
 import {connect} from "react-redux";
+import PropTypes from "prop-types";
 import { Map } from "immutable";
 import "./styles.css";
 import * as notificationActions from "../../data/notifications/actions";
 
+/**
+ * A simple form allowing users to trigger custom notifications.
+ */
 export class Trigger extends React.Component {
+  static propTypes = {
+    /*
+     * Uses data entered into the form to trigger a new notification.
+     */
+    addNotification: PropTypes.func.isRequired
+  }
+
   constructor(props) {
     super(props);
     this.emptyNotification = Map({ header: '', body: '', type: 'info' });
