@@ -9,6 +9,7 @@ import * as notificationActions from "../../data/notifications/actions";
  * A simple form allowing users to trigger custom notifications.
  */
 export class Trigger extends React.Component {
+  static displayName = "Notification Trigger";
   static propTypes = {
     /*
      * Uses data entered into the form to trigger a new notification.

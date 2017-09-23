@@ -19,7 +19,9 @@ Components
 -----
 **src\components\Trigger\index.js**
 
-### 1. A simple form allowing users to trigger custom notifications.
+### 1. Notification Trigger
+
+A simple form allowing users to trigger custom notifications.   
 
 
 
