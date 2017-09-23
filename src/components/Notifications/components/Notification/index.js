@@ -1,11 +1,33 @@
 import React from "react";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 import classnames from "classnames";
+import PropTypes from "prop-types";
 import * as notificationActions from "../../../../data/notifications/actions";
 
 import "./styles.css";
 
+/**
+ * A single notification.
+ * Example:
+ * ```html
+ * <Notification
+ *    id="hduehczfig"
+ *    type="error"
+ *    body="Body text"
+ *    header="header text"
+ * />
+ * ```
+ */
 export class Notification extends React.Component {
+  static displayName = "Notification";
+  static propTypes = {
+    id: PropTypes.string,
+    type: PropTypes.string.isRequired,
+    body: PropTypes.string,
+    header: PropTypes.string.isRequired,
+    closeNotification: PropTypes.func.isRequired
+  }
+
   componentDidMount() {
     if (this.props.type === "info") {
       setTimeout(() => this.props.closeNotification(this.props.id), 90000);

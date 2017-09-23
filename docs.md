@@ -3,25 +3,56 @@ Components
 
 **src\components\Notifications\components\Notification\index.js**
 
-### 1. 
+### 1. Notification
+
+A single notification.
+Example:
+```html
+<Notification
+   id="hduehczfig"
+   type="error"
+   body="Body text"
+   header="header text"
+/>
+```   
 
 
 
 
+Property | Type | Required | Default value | Description
+:--- | :--- | :--- | :--- | :---
+id|string|no||
+type|string|yes||
+body|string|no||
+header|string|yes||
+closeNotification|func|yes||
 -----
 **src\components\Notifications\index.js**
 
-### 1. 
+### 1. Notifications
+
+A list of animated notifications.
+Example:
+```html
+<Trigger />
+```   
 
 
 
 
+Property | Type | Required | Default value | Description
+:--- | :--- | :--- | :--- | :---
+notifications|instanceOf|yes||
 -----
 **src\components\Trigger\index.js**
 
-### 1. Notification Trigger
+### 1. Trigger
 
-A simple form allowing users to trigger custom notifications.   
+A simple form allowing users to trigger custom notifications.
+Example:
+```html
+<Trigger />
+```   
 
 
 

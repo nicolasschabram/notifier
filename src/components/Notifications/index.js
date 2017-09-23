@@ -1,11 +1,25 @@
 import React from "react";
 import {connect} from "react-redux";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import PropTypes from "prop-types";
+import { List } from "immutable";
 
 import "./styles.css";
 import Notification from "./components/Notification";
 
+/**
+ * A list of animated notifications.
+ * Example:
+ * ```html
+ * <Trigger />
+ * ```
+ */
 export class Notifications extends React.Component {
+  static displayName = "Notifications";
+  static propTypes = {
+    notifications: PropTypes.instanceOf(List).isRequired
+  };
+
   constructor(props) {
     super(props);
     this.state = {};
